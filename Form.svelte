@@ -1,5 +1,5 @@
 <script>
- import { form } from "./styles.js";
+ import { form ,button } from "./styles.js";
   const movies = [
    {
       name: "Avengers",
@@ -15,11 +15,11 @@
 </script>
 
 {#each movies as movie}
-<form class='{form}'>
+<form class="{form}">
 	<h3>{movie.name}</h3>
-	<button type="button" on:click={()=>movie.quantity -=1} disabled={movie.quantity <= 0}>-</button>
+	<button class="button" type="button" on:click={()=>movie.quantity -=1} disabled={movie.quantity <= 0}>-</button>
 	{movie.quantity}
-	<button type="button" on:click={()=>movie.quantity +=1} disabled={movie.quantity >= movie.available}>+</button>
+	<button class="button" type="button" on:click={()=>movie.quantity +=1} disabled={movie.quantity >= movie.available}>+</button>
 </form>
 {/each}
 

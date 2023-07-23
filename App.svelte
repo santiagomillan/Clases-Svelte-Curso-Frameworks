@@ -1,5 +1,6 @@
 <script>
 import Form from "./Form.svelte";
+import {title} from "./styles.js";
 </script>
 
 
