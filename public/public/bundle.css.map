@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\nimport Form from \"./Form.svelte\";\n</script>\n\n\n<main>\n  <h2>Peliculas</h2>\n  <Form/>\n\n</main>\n\n<style>\n  :global(body) {\n    --bg: #ffe9c5 ;\n    --color: #e54b00;\n    --color2: #512613;\n    background: var(--bg);\n    color: var(--color);\n  }\n</style>"
+  ],
+  "names": [],
+  "mappings": "AAYU,IAAM,CACZ,IAAI,CAAE,QAAQ,CACd,OAAO,CAAE,OAAO,CAChB,QAAQ,CAAE,OAAO,CACjB,UAAU,CAAE,IAAI,IAAI,CAAC,CACrB,KAAK,CAAE,IAAI,OAAO,CACpB"
+}
